@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h2 {
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: inline-block;
+    background-color: red;
+    width: 8rem;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+
+}
