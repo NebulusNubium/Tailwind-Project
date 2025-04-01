@@ -12,8 +12,11 @@
         <div class="logo-top ">
             <img src="images/top-logo.png" alt="">
         </div>
-        <nav>
-            <ul class="list-none flex gap-4">
+        <div class="menu w-3 lg:hidden">
+            <img class="w-full " src="images/bars-solid.svg" alt="">
+        </div>
+        <nav class="hidden lg:inline-block">
+            <ul class="list-none flex gap-5 text-[16px]">
                 <li class="text-xs"><a class="text-white" href="">WHO WE ARE</a></li>
                 <li class="text-xs"><a class="text-white" href="">GET INVOLVED</a></li>
             </ul>
@@ -21,10 +24,10 @@
     </header>
 
     <main>
-        <section id="banner" class="bg-[url('../images/hero-image.jpg')] bg-cover h-[60vh] pt-14 flex flex-col items-center gap-4">
-            <h1 class="text-center text-white w-[30%] text-5xl">Our goal is to inspire Tallahassee to write 1,000,000 lines of code_</h1>
-            <p class="text-center text-white w-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae aperiam distinctio ipsa! Dignissimos esse eaque placeat corporis aperiam iure.</p>
-            <a class="text-center text-white bg-red-400 p-2 rounded-smpl-30 ml-100px" href="">Learn More >></a>
+        <section id="banner" class="bg-[url('../images/hero-image.jpg')] bg-cover h-[50vh] pt-14 flex flex-col items-center gap-4">
+            <h1 class="text-center text-white w-[60%] text-2xl md:text-5xl">Our goal is to inspire Tallahassee to write 1,000,000 lines of code_</h1>
+            <p class="text-center text-white w-30 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae aperiam distinctio ipsa! Dignissimos esse eaque placeat corporis aperiam iure.</p>
+            <a class="text-center text-white bg-red-500 p-2 rounded-[10px] ml-100px" href="">Learn More >></a>
             <div class="pl-30">
                 <img class="" src="images/code.png" alt="">
             </div>
@@ -35,10 +38,64 @@
                 <img src="images/academy-brand-med.png" alt="">
             </div>
             <h2 class="text-red-600 text-4xl">WHO WE ARE</h2>
-            <p>We are MASSIVE Academy. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vero.</p>
+            <p class="text-center">We are <a class="text-red-600" href="">MASSIVE Academy</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vero.</p>
         </section>
 
-        <section id="get-involved" class="bg-gray-100 p-[3rem] text-center h-[50vh]">
+        <section id="get-involved" class="bg-gray-100 pt-[2rem] h-[110vh] text-center h-[50vh]">
+            <h2 class="text-red-600 mb-10 text-4xl">Get Involved</h2>
+            <div class="flex flex-col justify-center items-center gap-4">
+                <div class="students sponsors w-[90%] flex justify-center items-center flex-col gap-3">
+                    <div class="w-[30%] md: w-[15%]">
+                        <img class="w-[100] p-6 bg-gray-800 rounded-[55%]" src="images/graduation-cap-solid.svg" alt="">
+                    </div>
+                    <h3 class="text-red-600 text-xl">STUDENTS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequuntur et laudantium dignissimos provident velit!</p>
+                    <a class="text-red-600 p-2 bg-white border-2" href="">Start Learning >></a>
+                </div>
+                <div class="educators sponsors w-[90%] flex justify-center items-center flex-col gap-3 ">
+                    <div class="w-[30%] md: w-[15%]">
+                        <img class="w-[100] p-6 bg-gray-800 rounded-[50%]" src="images/pencil-solid.svg" alt="">
+                    </div>
+                    <h3 class="text-red-600 text-xl">EDUCATORS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequuntur et laudantium dignissimos provident velit!</p>
+                    <a class="text-red-600 p-2 bg-white border-2" href=""> Join The Initiative >></a>
+                </div>
+                <div class="sponsors w-[90%] flex justify-center items-center flex-col gap-3">
+                    <div class="w-[30%] md: w-[15%]">
+                        <img class="w-[100] p-6 bg-gray-800 rounded-[50%]" src="images/money-bill-1-regular.svg" alt="">
+                    </div>
+                    <h3 class="text-red-600 text-xl">SPONSORS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequuntur et laudantium dignissimos provident velit!</p>
+                    <a class="text-red-600 p-2 bg-white border-2" href=""> Give Support >></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-red-500 p-[5vh]">
+        <div class="w-[80%] pt-[20%] pl-3 md: w-[40%] pl-[10%]">
+            <img class="w-[100%]" src="images/one-million-bottom-brand.png" alt="">
+        </div>
+    </footer>
+
+        <!-- <main>
+            <section id="banner" class="bg-[url('../images/hero-image.jpg')] bg-cover h-[60vh] pt-14 flex flex-col items-center gap-4">
+                <h1 class="text-center text-white w-[60%] text-2xl">Our goal is to inspire Tallahassee to write 1,000,000 lines of code_</h1>
+                <p class="text-center text-white w-30 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quae aperiam distinctio ipsa! Dignissimos esse eaque placeat corporis aperiam iure.</p>
+                <a class="text-center text-white bg-red-400 p-2 rounded-smpl-30 ml-100px" href="">Learn More >></a>
+                <div class="pl-30">
+                    <img class="" src="images/code.png" alt="">
+                </div>
+            </section>
+    
+            <section id="about" class="flex flex-col items-center gap-8 mt-10 mb-10">
+                <div class="img-academy">
+                    <img src="images/academy-brand-med.png" alt="">
+                </div>
+                <h2 class="text-red-600 text-4xl">WHO WE ARE</h2>
+                <p>We are MASSIVE Academy. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vero.</p>
+            </section> -->
+        <!-- <section id="get-involved" class="bg-gray-100 p-[3rem] text-center h-[50vh]">
             <h2 class="text-red-600 mb-10 text-4xl">Get Involved</h2>
             <div class="flex justify-center gap-4">
                 <div class="students sponsors w-[20vw] flex justify-center items-center flex-col gap-3">
@@ -73,7 +130,7 @@
                 <img class="w-[100%]" src="images/one-million-bottom-brand.png" alt="">
             </div>
         </footer>
-    </main>
+    </main> -->
 
 
 
