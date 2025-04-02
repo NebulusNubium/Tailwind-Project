@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(40px);
+    }
+    66% {
+        transform: translateX(-40px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 h2 {
     position: relative;
 }
@@ -16,5 +31,8 @@ h2::after {
     left: 50%;
     transform: translateX(-50%);
     top: 130%;
+}
 
+.btn:hover {
+    animation: move 1s infinite;
 }
